@@ -10,7 +10,7 @@ import { appRouter } from 'components/router/appRouter';
 import globalize from 'lib/globalize';
 import ServerConnections from 'components/ServerConnections';
 import cardBuilder from 'components/cardbuilder/cardBuilder';
-import { getBackdropShape, getPortraitShape, getSquareShape } from 'utils/card';
+import { getPortraitShape, getSquareShape } from 'utils/card';
 
 import type { SectionContainerElement, SectionOptions } from './section';
 
@@ -61,7 +61,7 @@ function getLatestItemsHtmlFn(
         } else if (viewType === 'music' || viewType === 'homevideos') {
             shape = getSquareShape(enableOverflow);
         } else {
-            shape = getBackdropShape(enableOverflow);
+            shape = getPortraitShape(enableOverflow);
         }
 
         return cardBuilder.getCardsHtml({

@@ -1,11 +1,12 @@
 import { type Theme } from '@mui/material/styles';
 
-import appletv from './appletv';
+import tjscustom from './tjscustom';
+/* import appletv from './appletv';
 import blueradiance from './blueradiance';
 import dark from './dark';
 import light from './light';
 import purplehaze from './purplehaze';
-import wmc from './wmc';
+import wmc from './wmc'; */
 
 declare module '@mui/material/styles' {
     interface Palette {
@@ -18,16 +19,17 @@ declare module '@mui/material/styles' {
 }
 
 const ALL_THEMES = {
-    appletv,
+    tjscustom
+/*     appletv,
     blueradiance,
     dark,
     light,
     purplehaze,
-    wmc
+    wmc */
 };
 
 /** The default theme if a user has not selected a preferred theme. */
-export const DEFAULT_THEME = dark;
+export const DEFAULT_THEME = tjscustom;
 
 /**
  * Gets a MUI Theme by its string id. Returns the default theme if no matching theme is found.
